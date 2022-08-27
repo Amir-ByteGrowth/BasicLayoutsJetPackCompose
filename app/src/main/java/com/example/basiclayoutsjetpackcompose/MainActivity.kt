@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.basiclayoutsjetpackcompose.body.CreateAlignYourBodyElement
 import com.example.basiclayoutsjetpackcompose.searchbar.CreateSearchBar
 import com.example.basiclayoutsjetpackcompose.ui.theme.BasicLayoutsJetPackComposeTheme
 
@@ -26,6 +27,12 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Column(modifier = Modifier.padding(20.dp)) {
                         CreateSearchBar()
+                        Text(
+                            text = "Align your body",
+                            style = MaterialTheme.typography.h5,
+                            modifier = Modifier.padding(top = 20.dp, start = 20.dp, bottom = 11.dp)
+                        )
+                        CreateAlignYourBodyElement()
                     }
 
                 }
