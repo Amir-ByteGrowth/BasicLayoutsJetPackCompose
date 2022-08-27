@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -22,7 +23,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun CreateSearchBar() {
     TextField(
-        label = { Text(text = "Search here")},
+        placeholder = { Text(text = "Search here") },
         value = "", onValueChange = {},
         leadingIcon = {
             Icon(
@@ -30,11 +31,11 @@ fun CreateSearchBar() {
                 contentDescription = ""
             )
         },
+        colors = TextFieldDefaults.textFieldColors(Color.White),
         modifier = Modifier
             .fillMaxWidth()
-            .border(width = 0.dp, color = Color.Transparent)
-            .background(color = Color.White),
-
+            .heightIn(56.dp)
+            .background(Color.White),
     )
 }
 
