@@ -12,7 +12,27 @@ class ExerciseData {
             ExerciseDataItem("Stretching", R.drawable.stretching),
             ExerciseDataItem("Yoga", R.drawable.yoga)
         )
+
+        var FavCollectionDataList = listOf(
+            FavCollectionDataItem("Nature Meditations", R.drawable.nature2),
+            FavCollectionDataItem("Nature2" + " Meditations", R.drawable.nature2),
+            FavCollectionDataItem(
+                "Nature3" + " Meditations", R.drawable.nature3
+            ),
+            FavCollectionDataItem(
+                "Nature4" + " Meditations", R.drawable.nature4
+            ),
+            FavCollectionDataItem(
+                "Nature5" + " Meditations", R.drawable.nature5
+            ),
+            FavCollectionDataItem(
+                "Nature6" + " Meditations", R.drawable.nature6
+            )
+        )
     }
 }
 
 data class ExerciseDataItem(val name: String, val resourceId: Int)
+
+data class FavCollectionDataItem(val name: String, val resourceId: Int)
+
